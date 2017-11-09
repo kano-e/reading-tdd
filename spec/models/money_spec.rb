@@ -11,5 +11,6 @@ RSpec.describe 'Money Test', type: :model do
 
   it 'Test Equality' do
     expect(Dollar.new(5).equals(Dollar.new(5))).to be true
+    expect(Dollar.new(5).equals(Dollar.new(6))).to be false
   end
 end
