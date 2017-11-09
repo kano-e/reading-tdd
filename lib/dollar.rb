@@ -9,7 +9,7 @@ class Dollar
     Dollar.new(amount * multiplier)
   end
 
-  def ==(object)
-    true
+  def ==(dollar)
+    amount == dollar.amount
   end
 end
