@@ -1,4 +1,6 @@
-class Dollar
+require 'money'
+
+class Dollar < Money
   attr_accessor :amount
 
   def initialize(amount)
