@@ -1,8 +1,6 @@
 require 'money'
 
 class Dollar < Money
-  attr_accessor :amount
-
   def initialize(amount)
     self.amount = amount
   end
