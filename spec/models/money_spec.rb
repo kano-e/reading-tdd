@@ -1,4 +1,5 @@
 require 'dollar'
+require 'franc'
 
 RSpec.describe 'Money Test', type: :model do
   it 'Test Multiplication' do
