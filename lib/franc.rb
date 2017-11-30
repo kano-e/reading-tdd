@@ -7,7 +7,7 @@ class Franc < Money
     Franc.new(amount * multiplier)
   end
 
-  def ==(franc)
-    amount == franc.amount
+  def ==(money)
+    amount == money.amount
   end
 end
