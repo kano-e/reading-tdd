@@ -3,7 +3,7 @@ require 'franc'
 
 RSpec.describe 'Money Test', type: :model do
   it 'Test Multiplication' do
-    five = Dollar.new(5)
+    five = Money.dollar(5)
     expect(five.times(2)).to eq Dollar.new(10)
     expect(five.times(3)).to eq Dollar.new(15)
   end
