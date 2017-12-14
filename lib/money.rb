@@ -5,6 +5,10 @@ class Money
     Dollar.new(amount)
   end
 
+  def self.franc(amount)
+    Franc.new(amount)
+  end
+
   def times(multipiler)
     raise NotImplementedError, "This #{self.class} cannot respond to:"
   end
