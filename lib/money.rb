@@ -13,6 +13,10 @@ class Money
     raise NotImplementedError, "This #{self.class} cannot respond to:"
   end
 
+  def currency
+    raise NotImplementedError, "This #{self.class} cannot respond to:"
+  end
+
   def ==(money)
     amount == money.amount && self.instance_of?(money.class)
   end
