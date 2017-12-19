@@ -14,7 +14,7 @@ class Money
   end
 
   def currency
-    raise NotImplementedError, "This #{self.class} cannot respond to:"
+    @currency
   end
 
   def ==(money)
