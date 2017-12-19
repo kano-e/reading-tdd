@@ -9,6 +9,11 @@ class Money
     Franc.new(amount, 'CHF')
   end
 
+  def initialize(amount, currency)
+    self.amount = amount
+    self.currency = currency
+  end
+
   def times(multipiler)
     raise NotImplementedError, "This #{self.class} cannot respond to:"
   end
