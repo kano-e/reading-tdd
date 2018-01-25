@@ -14,8 +14,8 @@ class Money
     self.currency = currency
   end
 
-  def times(multipiler)
-    raise NotImplementedError, "This #{self.class} cannot respond to:"
+  def times(multiplier)
+    Money.new(amount * multiplier, currency)
   end
 
   def currency
@@ -23,7 +23,7 @@ class Money
   end
 
   def ==(money)
-    amount == money.amount && self.instance_of?(money.class)
+    amount == money.amount && currency == money.currency
   end
 
   private
