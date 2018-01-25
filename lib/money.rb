@@ -2,11 +2,11 @@ class Money
   attr_accessor :amount
 
   def self.dollar(amount)
-    Dollar.new(amount, 'USD')
+    Money.new(amount, 'USD')
   end
 
   def self.franc(amount)
-    Franc.new(amount, 'CHF')
+    Money.new(amount, 'CHF')
   end
 
   def initialize(amount, currency)
