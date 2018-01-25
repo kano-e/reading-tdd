@@ -14,8 +14,8 @@ class Money
     self.currency = currency
   end
 
-  def times(multipiler)
-    raise NotImplementedError, "This #{self.class} cannot respond to:"
+  def times(multiplier)
+    Money.new(amount * multiplier, currency)
   end
 
   def currency
