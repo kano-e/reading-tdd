@@ -1,4 +1,4 @@
-require 'dollar'
+require 'money'
 require 'franc'
 
 RSpec.describe 'Money Test', type: :model do
